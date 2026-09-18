@@ -60,3 +60,4 @@ def delete_task():
     pen.execute("delete from task where id between %s and %s",(4,6))
     connection.commit()
     return "task deleted"
+connection.close()
